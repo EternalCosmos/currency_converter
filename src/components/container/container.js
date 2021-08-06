@@ -52,15 +52,15 @@ const Container = () => {
             const {
               data: { info },
             } = data;
-            setRate(info.rate);
+            setRate(info.rate.toFixed(2));
             const calculatedResult = info.rate * valueAmount;
-            setResult(calculatedResult);
+            setResult(calculatedResult.toFixed(2));
 
             let exchangeRates = localStorage.getItem("exchangeRates");
             if (!exchangeRates) {
               exchangeRates = {
                 [exchangePair]: {
-                  rate: info.rate,
+                  rate: info.rate.toFixed(2),
                   createdAt: Date.now(),
                 },
               };
@@ -72,7 +72,7 @@ const Container = () => {
             } else {
               exchangeRates = JSON.parse(exchangeRates);
               exchangeRates[exchangePair] = {
-                rate: info.rate,
+                rate: info.rate.toFixed(2),
                 createdAt: Date.now(),
               };
               localStorage.setItem(
@@ -89,7 +89,7 @@ const Container = () => {
       } else {
         const calculatedResult =
           previousInfo?.[exchangePair].rate * valueAmount;
-        setResult(calculatedResult);
+        setResult(calculatedResult.toFixed(2));
       }
     }
   }, [valueFrom, valueTo, valueAmount]);

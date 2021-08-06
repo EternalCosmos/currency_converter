@@ -19,8 +19,8 @@ const Result = ({ rate, result, valueAmount, valueFrom, valueTo }) => {
 export default Result;
 
 Result.propTypes = {
-  rate: PropTypes.number,
-  result: PropTypes.number,
+  rate: PropTypes.string,
+  result: PropTypes.string,
   valueAmount: PropTypes.string,
   valueFrom: PropTypes.string,
   valueTo: PropTypes.string,
