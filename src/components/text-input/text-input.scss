@@ -1,0 +1,15 @@
+.text_field_container {
+  display: inline-block;
+  position: relative;
+  .text_field_error {
+    bottom: -30%;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0.00938em;
+    line-height: 1;
+    position: absolute;
+    color: #f44336;
+  }
+}
