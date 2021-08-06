@@ -18,3 +18,7 @@ Open localhost:3000 to view it in the browser.
 ### `API`
 
 API used is the one provided by https://app.nocodeapi.com/
+
+### `Demo`
+
+You can take a look at the project at https://peaceful-dijkstra-ca19ec.netlify.app/
