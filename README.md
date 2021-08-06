@@ -14,4 +14,7 @@ Open localhost:3000 to view it in the browser.
 
 1) MaterialUI - for UI components (2,147,128 weekly dowloads) 
 2) axios - for Promise based HTTP client (17,391,109 weekly dowloads)
-3) Scss - for advanced working with styles
+
+### `API`
+
+API used is the one provided by https://app.nocodeapi.com/
